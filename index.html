@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d4de644c55.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Personal portfolio</title>
 </head>
 <body>
     <header>
+            <img id="logo" src="./images/logo.svg" alt="logo">
+            <input type="checkbox" name="menu-btns" id="menu-btn">
+            <label id="toggler" for="menu-btns"><i class="fa-solid fa-bars"></i></label>
+            <label id="collapse" for="menu-btns"><i class="fa-solid fa-times"></i></label>
+
         <nav id="navbar">
+            <div class="profile">
+                <img src="./images/zee.jpg" alt="profile-pic">
+                <p>Zee</p>
+            </div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -23,7 +33,7 @@
     <main>
         <!-- WELCOME SECTION -->
         <section id="welcome-section">
-            <h1>My portfolio</h1>
+            <!-- <h1>My portfolio</h1> -->
         </section>
         <!-- PROJECT SECTION -->
         <section id="portfolio">

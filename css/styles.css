@@ -4,24 +4,105 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
+    font-size: 1.6rem;
     background-color: white;
     color: black;
 }
 
-#navbar {
+header {
     position: fixed;
     top: 0;
     left: 0;
-    /* background-color: green; */
     width: 100%;
-    padding-block: 2rem;
+    padding: 1em;
+    /* background-color: green; */
+}
+
+#logo {
+    width: 50px;
+}
+
+#toggler, #collapse {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: .2em .55em;
+    font-size: 2.4rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#toggler {
+    top: .8em;
+    right: .8em;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.fa-bars {
+    /* cursor: pointer; */
+}
+
+
+#navbar {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 50vw;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.menu-btn:checked ~ #navbar {
+    right: 0;
+}
+
+.profile {
+    margin: 4em 1em 2em;
+    text-align: center;
+}
+
+.profile img {
+    width: 60%;
+    margin: 0 auto .5em;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.profile p {
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+#navbar ul {
+    list-style: none;
+}
+
+#navbar li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 55px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding-left: 1em;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
 }
 
 
 #welcome-section {
     height: 100vh;
-    padding-top: 8rem;
+    padding-top: 12rem;
     /* background-color: blue; */
     z-index: -1;
 }
