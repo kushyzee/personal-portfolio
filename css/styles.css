@@ -27,27 +27,30 @@ header {
     width: 50px;
 }
 
-#toggler, #collapse {
+#open-btn, #close-btn {
     position: absolute;
-    background-color: black;
-    color: white;
     padding: .2em .55em;
     font-size: 2.4rem;
     cursor: pointer;
     border-radius: 5px;
 }
 
-#toggler {
-    top: .8em;
-    right: .8em;
+#open-btn {
+    top: 15px;
+    right: 15px;
+    background-color: black;
+    color: white;
+}
+
+#close-btn {
+    z-index: 999999;
+    top: 15px;
+    right: -100vw;
+    color: red;
 }
 
 #menu-btn {
     display: none;
-}
-
-.fa-bars {
-    /* cursor: pointer; */
 }
 
 
@@ -55,15 +58,25 @@ header {
     display: block;
     position: fixed;
     top: 0;
-    right: -250px;
+    right: -100%;
     width: 50vw;
     height: 100%;
     background-color: black;
     color: white;
 }
 
-.menu-btn:checked ~ #navbar {
+#menu-btn:checked ~ #navbar {
     right: 0;
+}
+
+#menu-btn:checked ~ label #open-btn {
+    right: 40vw;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#menu-btn:checked~label #close-btn {
+    right: 15px;
 }
 
 .profile {
