@@ -20,24 +20,27 @@ header {
     left: 0;
     width: 100%;
     padding: 1em;
-    /* background-color: green; */
+    z-index: 999999;
 }
 
 #logo {
     width: 50px;
+    background: black;
+    padding: .6em;
+    border-radius: 5px;
 }
 
 #open-btn, #close-btn {
     position: absolute;
-    padding: .2em .55em;
     font-size: 2.4rem;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 #open-btn {
     top: 15px;
     right: 15px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    padding: .5em .6em;
     background-color: black;
     color: white;
     transition: all .4s linear;
@@ -45,10 +48,15 @@ header {
 
 #close-btn {
     z-index: 999999;
-    top: 15px;
+    top: 25px;
     right: -100vw;
+    font-size: 2.8rem;
     color: red;
     transition: all .4s linear;
+}
+
+#menu-btn:checked~label #close-btn {
+    right: 20px;
 }
 
 #menu-btn {
@@ -78,12 +86,8 @@ header {
     pointer-events: none;
 }
 
-#menu-btn:checked~label #close-btn {
-    right: 15px;
-}
-
 .profile {
-    margin: 4em 1em 2em;
+    margin: 6em 1em 2em;
     text-align: center;
 }
 
@@ -119,7 +123,25 @@ header {
 #welcome-section {
     height: 100vh;
     padding-top: 12rem;
-    /* background-color: blue; */
+    color: white;
+    background-color: white;
+    background: url(/images/bg.jpg);
+    background-size: cover;
+    background-position: 85%;
+    background-repeat: no-repeat;
+    position: relative;
+    isolation: isolate;
+}
+
+#welcome-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .8;
     z-index: -1;
 }
 
