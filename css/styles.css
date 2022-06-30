@@ -228,7 +228,7 @@ a {
 .skills label {
     display: block;
     margin-block: .6em -.6em;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .skills progress {
