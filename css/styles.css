@@ -365,6 +365,33 @@ a {
     color: black;
 }
 
+
+/* CONTACT SECTION */
+#contact {
+    background-color: black;
+    color: white;
+    margin-top: 2em;
+    padding-block: 1.5em;
+}
+
+.inverse {
+    margin-left: .6em;
+}
+
+.inverse .span {
+    border-color: white;
+}
+
+#contact p {
+    margin-left: 1em;
+}
+
+#contact form {
+    margin-inline: 1em;
+    width: 100%;
+}
+
+
 /* MEDIA QUERIES SECTION */
 
 @media (min-width: 800px) {
