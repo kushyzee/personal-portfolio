@@ -47,7 +47,7 @@ a {
 }
 
 #close-btn {
-    z-index: 999999;
+    z-index: 99999999;
     top: 25px;
     right: -100vw;
     font-size: 2.6rem;
@@ -74,6 +74,7 @@ a {
     background-color: black;
     color: white;
     transition: all .4s linear;
+    z-index: 9999999;
 }
 
 #navbar::after {
