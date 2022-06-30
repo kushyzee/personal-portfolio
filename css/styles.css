@@ -1,6 +1,7 @@
 html {
     font-size: 62.5%;
     scroll-padding-top: 75px;
+    transition: all .5s;
 }
 
 body {
@@ -16,11 +17,7 @@ header {
     left: 0;
     width: 100%;
     padding: 1em;
-    z-index: 999999;
-}
-
-main {
-    isolation: isolate;
+    z-index: 9999999;
 }
 
 a {
@@ -78,7 +75,6 @@ a {
     background-color: black;
     color: white;
     transition: all .4s linear;
-    z-index: 9999999;
 }
 
 #navbar::after {
@@ -118,7 +114,7 @@ a {
 }
 
 .profile {
-    margin: 8em 1em 2em;
+    margin: 6em 1em 2em;
     text-align: center;
 }
 
@@ -305,6 +301,12 @@ a {
     text-align: center;
     color: black;
     background-color: rgb(190, 190, 190);
+    box-shadow: 0 0 4px black;
+}
+
+.project-tile>a {
+    position: relative;
+    display: block;
 }
 
 .project-tile img {
@@ -312,13 +314,38 @@ a {
     border-top-right-radius: 10px;
 }
 
-.project-tile p {
+.project-tile p:not(.preview) {
     font-weight: 500;
-    color: black;
+    color: rgb(33, 33, 33);
     padding-block: 1em;
 }
 
+.project-tile .preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    color: darkgreen;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.1px);
+    -webkit-backdrop-filter: blur(4.1px);
+    border: 1px solid rgba(255, 255, 255, 0.37);
+    opacity: 0;
+    transition: all .5s linear;
+}
 
+.project-tile .preview:hover {
+    opacity: 1;
+}
 
 /* MEDIA QUERIES SECTION */
 
