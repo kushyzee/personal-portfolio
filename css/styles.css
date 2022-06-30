@@ -285,7 +285,33 @@ a {
 }
 
 /* PORTFOLIO SECTION STARTS */
-section
+#projects {
+    padding: 0 1em;
+}
+
+#projects>p {
+    margin-block: -.8em 1.4em;
+    font-size: 1.8rem;
+}
+
+.project-tile {
+    margin-bottom: 3em;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    background-color: rgb(190, 190, 190);
+}
+
+.project-tile img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-tile p {
+    font-weight: 500;
+    color: black;
+    padding-block: 1em;
+}
 
 
 
