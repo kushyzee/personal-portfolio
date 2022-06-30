@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -218,30 +219,65 @@ a {
 }
 
 .about-me {
-    margin-block: 5em 2em;
+    margin-block: 5em 4em;
+}
+
+.subheading {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5em;
+    font-size: 2.5rem;
+}
+
+.subheading>span {
+    display: inline-block;
+    width: 20%;
+    border: 1.5px solid rgb(0, 0, 0);    
+    margin-left: .5em;
 }
 
 .skills h2 {
     margin-bottom: .5em;
 }
 
-.skills label {
-    display: block;
-    margin-block: .6em -.6em;
-    /* border: 1px solid red; */
+.skills-chart {
+    width: 60%;
 }
 
-.skills progress {
-    appearance: none;
-    border: none;
-    background-color: rgb(169, 169, 169);
+.skills-chart p {
+    margin-bottom: .3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-chart p>span {
+    font-size: 1.4rem;
+}
+.progress-bar {
     height: 10px;
     border-radius: 10px;
+    margin-bottom: 1em;
+    background-color: rgb(150, 150, 150);
 }
 
-.skills progress::-moz-progress-bar, .skills progress::-webkit-progress-value  {
-    border-radius: 10px;
-    background-color: black;
+.progress {
+    height: 100%;
+    background-color: rgb(170, 170, 170);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.progress.one {
+    width: 95%;
+}
+
+.progress.two {
+    width: 80%;
+}
+.progress.three {
+    width: 60%;
+}
+.progress.four {
+    width: 90%;
 }
 
 
