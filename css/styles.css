@@ -1,9 +1,10 @@
 html {
     font-size: 62.5%;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 100px;
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     background-color: white;
     color: black;
@@ -146,7 +147,7 @@ a {
 
 /* WELCOME SECTION */
 #welcome-section {
-    height: 96vh;
+    height: 95vh;
     padding-top: 12rem;
     color: white;
     background-color: white;
@@ -189,13 +190,15 @@ a {
 }
 
 .welcome-wrapper h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    letter-spacing: 1px;
     margin-block: .4em;
     font-weight: 600;
 }
 
 .welcome-wrapper p:nth-of-type(2) {
     font-size: 2rem;
+    font-weight: 300;
 }
 
 .welcome-wrapper a {
@@ -212,13 +215,15 @@ a {
     margin-left: .4em;
 }
 
+/* ABOUT ME SECTION */
+
 #about {
     height: 100vh;
     padding: 0 1em;
 }
 
 .about-me {
-    margin-block: 5em 4em;
+    margin-block: 8em 4em;
 }
 
 .subheading {
@@ -240,7 +245,7 @@ a {
 }
 
 .skills-chart {
-    width: 60%;
+    width: 80%;
 }
 
 .skills-chart p {
@@ -279,6 +284,11 @@ a {
     width: 90%;
 }
 
+
+
+
+
+/* MEDIA QUERIES SECTION */
 
 @media (min-width: 800px) {
     body {
