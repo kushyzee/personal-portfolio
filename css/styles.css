@@ -89,14 +89,15 @@ a {
 #navbar::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 0;
+    right: 0;
     height: 100%;
     width: 100%;
-    background: url(/images/blob.svg);
-    background-size: 180%;
+    background: url(/images/blob-bottom.svg);
+    background-size: 147.5%;
     background-repeat: no-repeat;
-    transform: rotate(180deg);
+    background-position: bottom left;
+    /* transform: rotate(180deg); */
     z-index: -1;
 }
 
@@ -139,7 +140,7 @@ a {
     font-weight: 500;
     font-size: 1.8rem;
     padding-left: 1em;
-    border-top: 1px solid grey;
+    border-top: 1px solid #808080;
     border-bottom: 1px solid grey;
 }
 
@@ -171,8 +172,8 @@ a {
 
 .welcome-wrapper {
     display: flex;
-    background: url(/images/wave.svg);
-    background-position: bottom right;
+    background: url(/images/wave-big.svg);
+    background-position: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100%;
@@ -189,7 +190,7 @@ a {
 
 .welcome-wrapper h1 {
     font-size: 3rem;
-    margin-block: .4em;
+    margin-block: .5em 0;
     font-weight: 600;
 }
 
@@ -200,7 +201,7 @@ a {
 .welcome-wrapper a {
     margin-top: 4em;
     background-color: gray;
-    padding: .7em 1em;
+    padding: .6em .8em;
     border-radius: 5px;
     font-weight: 600;
     font-size: 1.8rem;
@@ -209,7 +210,6 @@ a {
 
 .fa-arrow-right {
     margin-left: .4em;
-    font-size: 2rem;
 }
 
 @media (min-width: 800px) {
