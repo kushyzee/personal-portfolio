@@ -1,6 +1,6 @@
 html {
     font-size: 62.5%;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 75px;
 }
 
 body {
@@ -218,12 +218,12 @@ a {
 /* ABOUT ME SECTION */
 
 #about {
-    height: 100vh;
     padding: 0 1em;
+    margin-bottom: 4em;
 }
 
 .about-me {
-    margin-block: 8em 4em;
+    margin-block: 5em 4em;
 }
 
 .subheading {
@@ -284,7 +284,8 @@ a {
     width: 90%;
 }
 
-
+/* PORTFOLIO SECTION STARTS */
+section
 
 
 
