@@ -97,8 +97,7 @@ a {
     background: url(../images/blob.svg);
     background-size: 180%;
     background-repeat: no-repeat;
-    background-position: bottom left;
-    /* transform: rotate(180deg); */
+    transform: rotate(180deg);
     z-index: -1;
 }
 
