@@ -82,7 +82,7 @@ a {
     left: 0;
     height: 100%;
     width: 100%;
-    background: url(/images/blob.svg);
+    background: url(../images/blob.svg);
     background-size: 180%;
     background-repeat: no-repeat;
     z-index: -1;
@@ -94,7 +94,7 @@ a {
     left: 0;
     height: 100%;
     width: 100%;
-    background: url(/images/blob.svg);
+    background: url(../images/blob.svg);
     background-size: 180%;
     background-repeat: no-repeat;
     transform: rotate(180deg);
@@ -150,7 +150,7 @@ a {
     padding-top: 12rem;
     color: white;
     background-color: white;
-    background: url(/images/bg.jpg);
+    background: url(../images/bg.jpg);
     background-size: cover;
     background-position: 85%;
     background-repeat: no-repeat;
@@ -172,7 +172,7 @@ a {
 
 .welcome-wrapper {
     display: flex;
-    background: url(/images/wave.svg);
+    background: url(../images/wave.svg);
     background-position: bottom right;
     background-size: 100%;
     background-repeat: no-repeat;
