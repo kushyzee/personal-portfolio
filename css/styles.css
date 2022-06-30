@@ -239,7 +239,7 @@ a {
     border-radius: 10px;
 }
 
-.skills progress::-moz-progress-bar {
+.skills progress::-moz-progress-bar, .skills progress::-webkit-progress-bar  {
     border-radius: 10px;
     background-color: black;
 }
