@@ -23,7 +23,7 @@ a {
 
 #logo {
     width: 50px;
-    background: black;
+    background: rgb(90, 90, 90);
     padding: .6em;
     border-radius: 5px;
 }
@@ -39,7 +39,7 @@ a {
     right: 15px;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     padding: .5em .6em;
-    background-color: black;
+    background-color: rgb(90, 90, 90);
     color: white;
     transition: all .4s linear;
 }
@@ -146,7 +146,7 @@ a {
 
 /* WELCOME SECTION */
 #welcome-section {
-    height: 100vh;
+    height: 96vh;
     padding-top: 12rem;
     color: white;
     background-color: white;
@@ -211,6 +211,39 @@ a {
 .fa-arrow-right {
     margin-left: .4em;
 }
+
+#about {
+    height: 100vh;
+    padding: 0 1em;
+}
+
+.about-me {
+    margin-block: 5em 2em;
+}
+
+.skills h2 {
+    margin-bottom: .5em;
+}
+
+.skills label {
+    display: block;
+    margin-block: .6em -.6em;
+    /* border: 1px solid red; */
+}
+
+.skills progress {
+    appearance: none;
+    border: none;
+    background-color: rgb(169, 169, 169);
+    height: 10px;
+    border-radius: 10px;
+}
+
+.skills progress::-moz-progress-bar, .skills progress::-webkit-progress-value  {
+    border-radius: 10px;
+    background-color: black;
+}
+
 
 @media (min-width: 800px) {
     body {
