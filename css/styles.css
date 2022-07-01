@@ -181,6 +181,7 @@ a {
 }
 
 .welcome-wrapper {
+    position: relative;
     display: flex;
     background: url(../images/wave.svg);
     background-position: bottom right;
@@ -204,11 +205,106 @@ a {
     font-weight: 600;
 }
 
-.welcome-wrapper p:nth-of-type(2) {
+.welcome-wrapper p:nth-of-type(2), .subtext {
+    position: absolute;
     font-size: 2rem;
     font-weight: 300;
     color: var(--lightgreen);
 }
+
+.welcome-wrapper p:nth-of-type(2) {
+    animation: switch 8s linear 1s infinite alternate backwards;
+}
+
+@keyframes switch {
+    0% {
+        margin-bottom: 0;
+        opacity: 1;
+    }
+
+    10% {
+        margin-bottom: 0;
+        opacity: 1;
+    }
+
+    20% {
+        margin-bottom: 0;
+        opacity: 1;
+    }
+
+    30% {
+        margin-bottom: 1em;
+        opacity: .5;
+    }
+
+    40% {
+        margin-bottom: 2em;
+        opacity: 0;
+    }
+
+    50% {
+        margin-bottom: 2em;
+        opacity: 0;
+    }
+
+    60% {
+        margin-bottom: 2em;
+        opacity: 0;
+    }
+
+    70% {
+        margin-bottom: 2em;
+        opacity: 0;
+    }
+
+    80% {
+        margin-bottom: 0;
+        opacity: 1;
+    }
+    
+    90% {
+        margin-bottom: 0;
+        opacity: 1;
+    }
+
+    100% {
+        margin-bottom: 0;
+        opacity: 1;
+    }
+}
+
+.subtext {
+    opacity: 0;
+    margin-top: 2em;
+    animation: switchtwo 3s linear 3s infinite;
+}
+
+/* @keyframes switchtwo {
+    0% {
+        margin-top: 2em;
+        opacity: 0;
+    }
+
+    25% {
+        margin-top: 2em;
+        opacity: 0;
+    }
+
+    50% {
+        margin-top: 1em;
+        opacity: .5;
+    }
+
+    75% {
+        margin-top: 0;
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+} */
 
 .welcome-wrapper a {
     position: relative;
