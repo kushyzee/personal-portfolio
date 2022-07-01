@@ -1,8 +1,8 @@
 :root {
-    --darkgreen: hsl(157, 100%, 59%);
-    --lightgreen: hsl(157, 76%, 74%);
+    --darkgreen: hsl(157, 97%, 35%);
+    --lightgreen: hsl(157, 61%, 46%);
     --lightergreen: hsl(157, 54%, 88%);
-    --lightblue: hsl(215, 35%, 19%);
+    --lightblue: hsl(215, 22%, 15%);
     --darkblue: hsl(212, 41%, 8%);
 }
 
@@ -150,8 +150,8 @@ a {
     font-weight: 500;
     font-size: 1.8rem;
     padding-left: 1em;
-    border-top: 1px solid var(--lightergreen);
-    border-bottom: 1px solid var(--lightergreen);
+    border-top: 1px solid rgba(79, 79, 79, .8);
+    border-bottom: 1px solid rgba(106, 106, 106, .4);
 }
 
 /* WELCOME SECTION */
@@ -325,7 +325,7 @@ a {
 
 .project-tile p:not(.preview) {
     font-weight: 500;
-    color: rgb(33, 33, 33);
+    color: var(--darkblue);
     padding-block: 1em;
 }
 
@@ -344,10 +344,10 @@ a {
     color: var(--darkgreen);
     /* From https://css.glass */
     background: hsla(212, 41%, 8%, .7);
-    box-shadow: 0 4px 30px hsla(212, 41%, 8%, .3);
+    box-shadow: 0 4px 30px hsla(212, 41%, 8%, .3) inset;
     backdrop-filter: blur(3.1px);
     -webkit-backdrop-filter: blur(4.1px);
-    border: 1px solid hsla(212, 79%, 72%, 0.7);
+    border: 1px solid hsl(157, 80%, 80%);
     opacity: 0;
     transition: all .5s linear;
 }
