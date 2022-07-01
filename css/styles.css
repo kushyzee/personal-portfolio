@@ -356,7 +356,7 @@ a {
     margin-bottom: 1em;
 }
 
-#profile-link {
+.button {
     display: inline-block;
     padding: .8em 1.2em;
     border-radius: 5px;
@@ -364,6 +364,7 @@ a {
     background-color: grey;
     color: black;
 }
+
 
 
 /* CONTACT SECTION */
@@ -376,19 +377,68 @@ a {
 
 .inverse {
     margin-left: .6em;
+    margin-bottom: .1em;
 }
 
-.inverse .span {
+.inverse span {
     border-color: white;
 }
 
-#contact p {
+.form-wrapper>p {
     margin-left: 1em;
+    margin-bottom: 2em;
+    color: rgb(195, 195, 195);
 }
 
 #contact form {
     margin-inline: 1em;
-    width: 100%;
+}
+
+#contact form input {
+    margin-bottom: 1em;
+    border-radius: 5px;
+    padding-left: .5em;
+    border: 1px solid rgb(195, 195, 195);
+    line-height: 30px;
+    outline: none;
+    background-color: transparent;
+    color: rgb(195, 195, 195);
+}
+
+#contact textarea {
+    min-height: 120px;
+    border-radius: 5px;
+    padding-left: .5em;
+    outline: none;
+    background-color: transparent;
+    color: rgb(195, 195, 195);
+}
+
+.contact-info {
+    margin: 2.5em 1em 1em;
+}
+
+.contact-icons p {
+    line-height: 35px;
+    color: rgb(195, 195, 195);
+}
+
+.contact-icons .icon {
+    margin-right: .4em;
+}
+
+#submit-button {
+    border: none;
+    margin-top: 1.5em;
+    padding: .6em .7em;
+    cursor: pointer;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    background-color: black;
+    color: white;
 }
 
 
