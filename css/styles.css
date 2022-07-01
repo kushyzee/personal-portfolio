@@ -159,7 +159,7 @@ a {
     height: 94.5vh;
     padding-top: 12rem;
     color: white;
-    background-color: white;
+    background-color: var(--darkblue);
     background: url(../images/bg.jpg);
     background-size: cover;
     background-position: 85%;
@@ -175,8 +175,8 @@ a {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
-    opacity: .8;
+    background-color: var(--darkblue);
+    opacity: .7;
     z-index: -1;
 }
 
@@ -207,7 +207,7 @@ a {
 .welcome-wrapper p:nth-of-type(2) {
     font-size: 2rem;
     font-weight: 300;
-    color: var(--lightergreen);
+    color: var(--lightgreen);
 }
 
 .welcome-wrapper a {
@@ -246,7 +246,7 @@ a {
 .subheading>span {
     display: inline-block;
     width: 20%;
-    border: 1.5px solid var(--darkgreen);    
+    border: 1.5px solid var(--darkblue);    
     margin-left: .5em;
 }
 
@@ -378,22 +378,18 @@ a {
 
 /* CONTACT SECTION */
 #contact {
-    background-color: black;
+    background-color: var(--darkblue);
     margin-top: 2em;
     padding-block: 2.5em 1em;
 }
 
 #contact h2 {
-    color: var(--lightgreen);
+    color: white;
 }
 
 .inverse {
     margin-left: .6em;
     margin-bottom: .1em;
-}
-
-.inverse span {
-    border-color: var(--lightergreen);
 }
 
 .form-wrapper>p {
@@ -407,23 +403,26 @@ a {
 }
 
 #contact form input {
+    width: 100%;
     margin-bottom: 1em;
     border-radius: 5px;
     padding-left: .5em;
-    border: 1px solid rgb(195, 195, 195);
-    line-height: 30px;
+    border: none;
     outline: none;
-    background-color: transparent;
-    color: rgb(195, 195, 195);
+    line-height: 35px;
+    background-color: rgb(75, 75, 75);
+    color: rgb(222, 222, 222);
 }
 
 #contact textarea {
     min-height: 120px;
+    width: 100%;
     border-radius: 5px;
     padding-left: .5em;
     outline: none;
-    background-color: transparent;
-    color: rgb(195, 195, 195);
+    border: none;
+    background-color: rgb(75, 75, 75);
+    color: rgb(222, 222, 222);
 }
 
 .contact-info {
@@ -438,6 +437,7 @@ a {
 
 .contact-icons .icon {
     margin-right: .4em;
+    color: var(--lightgreen);
 }
 
 #submit-button {
@@ -453,7 +453,7 @@ footer {
     padding: 1em;
     text-align: center;
     border-top: 1px solid rgb(68, 68, 68);
-    background-color: black;
+    background-color: var(--darkblue);
     color: white;
 }
 
