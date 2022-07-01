@@ -1,3 +1,11 @@
+:root {
+    --darkgreen: hsl(157, 100%, 59%);
+    --lightgreen: hsl(157, 76%, 74%);
+    --lightergreen: hsl(157, 54%, 88%);
+    --lightblue: hsl(215, 35%, 19%);
+    --darkblue: hsl(212, 41%, 8%);
+}
+
 html {
     font-size: 62.5%;
     scroll-padding-top: 75px;
@@ -26,7 +34,7 @@ a {
 
 #logo {
     width: 50px;
-    background: rgb(90, 90, 90);
+    background: var(--darkblue);
     padding: .6em;
     border-radius: 5px;
 }
@@ -42,7 +50,7 @@ a {
     right: 15px;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     padding: .5em .6em;
-    background-color: rgb(90, 90, 90);
+    background-color: var(--darkblue);
     color: white;
     transition: all .4s linear;
 }
@@ -52,7 +60,7 @@ a {
     top: 25px;
     right: -100vw;
     font-size: 2.6rem;
-    color: red;
+    color: var(--lightergreen);
     transition: all .4s linear;
 }
 
@@ -72,7 +80,7 @@ a {
     right: -100%;
     width: 50vw;
     height: 100%;
-    background-color: black;
+    background-color: var(--darkblue);
     color: white;
     transition: all .4s linear;
 }
@@ -142,8 +150,8 @@ a {
     font-weight: 500;
     font-size: 1.8rem;
     padding-left: 1em;
-    border-top: 1px solid #808080;
-    border-bottom: 1px solid grey;
+    border-top: 1px solid var(--lightergreen);
+    border-bottom: 1px solid var(--lightergreen);
 }
 
 /* WELCOME SECTION */
@@ -187,7 +195,6 @@ a {
 .welcome-wrapper p:nth-of-type(1) {
     font-size: 1.8rem;
     font-weight: 300;
-
 }
 
 .welcome-wrapper h1 {
@@ -200,16 +207,17 @@ a {
 .welcome-wrapper p:nth-of-type(2) {
     font-size: 2rem;
     font-weight: 300;
+    color: var(--lightergreen);
 }
 
 .welcome-wrapper a {
     margin-top: 4em;
-    background-color: gray;
     padding: .6em .8em;
     border-radius: 5px;
     font-weight: 600;
     font-size: 1.8rem;
-    color: black;
+    background-color: var(--lightgreen);
+    color: var(--darkblue);
 }
 
 .fa-arrow-right {
@@ -232,6 +240,7 @@ a {
     align-items: center;
     margin-bottom: .5em;
     font-size: 2.5rem;
+    color: var(--darkblue);
 }
 
 .subheading>span {
@@ -262,12 +271,12 @@ a {
     height: 10px;
     border-radius: 10px;
     margin-bottom: 1em;
-    background-color: rgb(150, 150, 150);
+    background-color: var(--darkgreen);
 }
 
 .progress {
     height: 100%;
-    background-color: rgb(170, 170, 170);
+    background-color: var(--lightgreen);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -332,13 +341,13 @@ a {
     font-size: 2rem;
     font-weight: 600;
     border-radius: 10px;
-    color: rgb(0, 100, 0);
+    color: var(--darkgreen);
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 4px 30px rgba(0, 155, 0, 0.3);
+    background: hsla(212, 41%, 8%, .7);
+    box-shadow: 0 4px 30px hsla(212, 41%, 8%, .3);
     backdrop-filter: blur(3.1px);
     -webkit-backdrop-filter: blur(4.1px);
-    border: 1px solid rgba(0, 100, 0, 0.37);
+    border: 1px solid hsla(212, 79%, 72%, 0.7);
     opacity: 0;
     transition: all .5s linear;
 }
