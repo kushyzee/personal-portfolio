@@ -392,6 +392,10 @@ a {
     margin-bottom: .1em;
 }
 
+.inverse span {
+    border-color: var(--darkgreen);
+}
+
 .form-wrapper>p {
     margin-left: 1em;
     margin-bottom: 2em;
