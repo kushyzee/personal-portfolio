@@ -433,8 +433,7 @@ a {
     margin-bottom: 3em;
     border-radius: 10px;
     text-align: center;
-    color: black;
-    background-color: rgb(190, 190, 190);
+    background-color: var(--darkblue);
     box-shadow: 0 0 2px black;
 }
 
@@ -450,7 +449,7 @@ a {
 
 .project-tile p:not(.preview) {
     font-weight: 500;
-    color: var(--darkblue);
+    color: white;
     padding-block: 1em;
 }
 
@@ -700,20 +699,41 @@ footer p {
 
     .welcome-wrapper p:nth-of-type(1) {
     font-size: 2rem;
-}
+    }
 
-.welcome-wrapper h1 {
-    font-size: 4rem;
-    margin-block: .3em;
-}
+    .welcome-wrapper h1 {
+        font-size: 4rem;
+        margin-block: .3em;
+    }
 
-.welcome-wrapper p:nth-of-type(2),
-.subtext {
-    font-size: 2.2rem;
-}
+    .welcome-wrapper p:nth-of-type(2), .subtext {
+        font-size: 2.2rem;
+    }
 
-.welcome-wrapper a {
-    font-size: 2rem;
-}
+    .welcome-wrapper a {
+        font-size: 2rem;
+    }
+
+    .about-me {
+        max-width: 580px;
+        padding-inline: .8em;
+        margin-inline: auto;
+    }
+
+    .subheading {
+        font-size: 2.6rem;
+        margin-bottom: .3em;
+    }
+
+    .skills {
+        max-width: 580px;
+        padding-inline: .8em;
+        margin-inline: auto;
+    }
+
+    #projects {
+        max-width: 580px;
+        margin-inline: auto;
+    }
 
 }
