@@ -60,8 +60,22 @@ a {
     top: 25px;
     right: -100vw;
     font-size: 2.6rem;
-    color: var(--lightergreen);
+    color: var(--lightgreen);
     transition: all .4s linear;
+    animation: btn-roll 3s linear infinite;
+}
+
+@keyframes btn-roll {
+    0%, 100% {
+        transform: rotate(0deg);
+        color: var(--lightgreen);
+    }
+
+    50% {
+        transform: rotate(20deg);
+        color: var(--lightergreen);
+    }
+
 }
 
 #menu-btn:checked~label #close-btn {
@@ -122,20 +136,20 @@ a {
 }
 
 .profile {
-    margin: 6em 1em 2em;
+    margin: 6em 0 2em;
     text-align: center;
 }
 
 .profile img {
-    width: 60%;
+    width: min(125px, 60%);
     margin: 0 auto .5em;
-    aspect-ratio: 1/1;
     border-radius: 50%;
 }
 
 .profile p {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-weight: 500;
+    color: var(--lightgreen);
 }
 
 #navbar ul {
@@ -152,12 +166,17 @@ a {
     padding-left: 1em;
     border-top: 1px solid rgba(79, 79, 79, .8);
     border-bottom: 1px solid rgba(106, 106, 106, .4);
+    transition: all .2s linear;
+}
+
+#navbar li a:hover {
+    border-left: 4.5px solid var(--lightgreen);
+    color: var(--lightergreen);
 }
 
 /* WELCOME SECTION */
 #welcome-section {
     height: 94.5vh;
-    padding-top: 12rem;
     color: white;
     background-color: var(--darkblue);
     background: url(../images/bg.jpg);
@@ -648,8 +667,53 @@ footer p {
 
 /* MEDIA QUERIES SECTION */
 
-@media (min-width: 800px) {
-    body {
-        /* background: red; */
+@media (min-width: 600px) {
+    header {
+        padding: 1.5em 0;
     }
+
+    #logo {
+        width: 60px;
+        margin-left: 2em;
+    }
+
+    #open-btn {
+        top: 20px;
+        right: 30px;
+    }
+
+    #menu-btn:checked~label #close-btn {
+        right: 35px;
+    }
+
+    #navbar {
+        width: min(40vw, 250px);
+    }
+
+    #navbar::after {
+        background-size: 150%;
+    }
+
+    #navbar::before {
+        background-size: 150%;
+    }
+
+    .welcome-wrapper p:nth-of-type(1) {
+    font-size: 2rem;
+}
+
+.welcome-wrapper h1 {
+    font-size: 4rem;
+    margin-block: .3em;
+}
+
+.welcome-wrapper p:nth-of-type(2),
+.subtext {
+    font-size: 2.2rem;
+}
+
+.welcome-wrapper a {
+    font-size: 2rem;
+}
+
 }
