@@ -213,98 +213,78 @@ a {
 }
 
 .welcome-wrapper p:nth-of-type(2) {
-    animation: switch 8s linear 1s infinite alternate backwards;
+    animation: switch 5s linear infinite;
 }
 
 @keyframes switch {
-    0% {
+    0%,
+    30%,
+    85%,
+    100% {
         margin-bottom: 0;
         opacity: 1;
     }
 
-    10% {
-        margin-bottom: 0;
-        opacity: 1;
-    }
-
-    20% {
-        margin-bottom: 0;
-        opacity: 1;
-    }
-
-    30% {
+    35% {
         margin-bottom: 1em;
-        opacity: .5;
+        opacity: 0.5;
     }
 
     40% {
         margin-bottom: 2em;
         opacity: 0;
     }
-
-    50% {
-        margin-bottom: 2em;
-        opacity: 0;
-    }
-
-    60% {
-        margin-bottom: 2em;
-        opacity: 0;
-    }
-
-    70% {
-        margin-bottom: 2em;
+    
+    45%, 75% {
+        animation-timing-function: ease-in;
+        margin-bottom: -1.5em;
         opacity: 0;
     }
 
     80% {
-        margin-bottom: 0;
-        opacity: 1;
-    }
-    
-    90% {
-        margin-bottom: 0;
-        opacity: 1;
+        margin-bottom: -1em;
+        opacity: 0.5;
     }
 
-    100% {
-        margin-bottom: 0;
-        opacity: 1;
-    }
 }
 
 .subtext {
     opacity: 0;
     margin-top: 2em;
-    animation: switchtwo 3s linear 3s infinite;
+    animation: switch-two 5s linear infinite;
 }
 
-/* @keyframes switchtwo {
-    0% {
+@keyframes switch-two {
+    0%,
+    30%,
+    90%,
+    100% {
         margin-top: 2em;
         opacity: 0;
     }
 
-    25% {
-        margin-top: 2em;
-        opacity: 0;
-    }
-
-    50% {
+    35% {
         margin-top: 1em;
-        opacity: .5;
+        opacity: 0.5;
     }
 
+    40%,
     75% {
         margin-top: 0;
         opacity: 1;
     }
 
-    100% {
-        margin-top: 0;
-        opacity: 1;
+    80% {
+        margin-top: -1em;
+        opacity: 0.5;
+        animation-timing-function: ease-out;
     }
-} */
+
+    85% {
+        margin-top: -2em;
+        opacity: 0;
+    }
+}
 
 .welcome-wrapper a {
     position: relative;
@@ -333,9 +313,8 @@ a {
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 10px rgba(170, 254, 201, 0.3);
-    backdrop-filter: blur(2.1px);
-    -webkit-backdrop-filter: blur(2.1px);
-    -moz-backdrop-filter: blur(2.1px);
+    backdrop-filter: blur(1.8px);
+    -webkit-backdrop-filter: blur(1.8px);
     border: 1px solid hsl(157, 80%, 80%);
     transition: all .4s linear;
     opacity: 0;
@@ -372,7 +351,7 @@ a {
 
 .subheading>span {
     display: inline-block;
-    width: 20%;
+    width: 2.5em;
     border: 1.5px solid var(--darkblue);    
     margin-left: .5em;
 }
