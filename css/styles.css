@@ -111,6 +111,7 @@ a {
     background-repeat: no-repeat;
     z-index: -1;
 }
+
 #navbar::before {
     content: "";
     position: absolute;
@@ -149,7 +150,7 @@ a {
 .profile p {
     font-size: 2.4rem;
     font-weight: 500;
-    color: var(--lightgreen);
+    color: var(--lightergreen);
 }
 
 #navbar ul {
@@ -492,7 +493,7 @@ a {
 .button {
     position: relative;
     display: inline-block;
-    padding: .8em 1.2em;
+    padding: .6em 1.2em;
     border-radius: 5px;
     font-weight: 500;
     background-color: var(--darkgreen);
@@ -665,8 +666,8 @@ footer p {
 
 
 /* MEDIA QUERIES SECTION */
-
-@media (min-width: 600px) {
+/* FOR 600PX SCREEN AND ABOVE */
+@media (min-width: 37.5em) {
     header {
         padding: 1.5em 0;
     }
@@ -736,4 +737,85 @@ footer p {
         margin-inline: auto;
     }
 
+    .form-wrapper {
+        max-width: 580px;
+        margin-inline: auto;
+    }
+
+    #contact textarea {
+        margin-bottom: 1em;
+    }
+
+    .contact-info {
+        max-width: 580px;
+        margin-inline: auto;
+        padding-left: 1em;
+    }
+
+}
+
+/* FOR 1024PX SCREEN AND ABOVE */
+@media (min-width: 64em) {
+    #open-btn, #close-btn, #navbar::before, #navbar::after, .profile {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #navbar {
+        display: inline-block;
+        position: static;
+        width: auto;
+        right: 0;
+        margin-right: 2em;
+        border-radius: 5px;
+        background-color: transparent;
+    }
+
+    #navbar ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #navbar li a {
+        padding-inline: 1.5em;
+        border: 0;
+        border-radius: 5px;
+        margin-left: .5em;
+        background-color: var(--darkblue);
+    }
+
+    #navbar li a:hover {
+        border-left: none;
+        border-top: 4.5px solid var(--lightgreen);
+        color: var(--lightergreen);
+    }
+
+    #welcome-section {
+        height: 100vh;
+    }
+
+    .welcome-wrapper {
+        background: url(../images/wave-big.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+
+    .welcome-wrapper p:nth-of-type(1) {
+        font-size: 2.5rem;
+    }
+
+    .welcome-wrapper h1 {
+        font-size: 4.5rem;
+        margin-block: .3em;
+    }
+
+    .welcome-wrapper p:nth-of-type(2), .subtext {
+        font-size: 2.5rem;
+    }
 }
