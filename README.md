@@ -45,7 +45,7 @@ The following guidelines were provided:
 
 ### Links
 
-- Live Site URL: [Preview website](https://kushyzee.github.io/zee-rentals-landing-page/)
+- Live Site URL: [Preview website](https://kushyzee.github.io/personal-portfolio/#)
 
 ## My process
 
